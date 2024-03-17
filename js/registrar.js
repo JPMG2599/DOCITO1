@@ -48,8 +48,6 @@ d.getElementById("tel").addEventListener("keypress", function (e) {
 
 function isDoctor() {
   d.querySelector("form").addEventListener("submit", function (e) {
-    // No se evita el envío del formulario inicialmente
-
     // Hacemos solicitud al server para confirmar que el doctor exista
     fetch("./doctor.php", {
       method: "POST",

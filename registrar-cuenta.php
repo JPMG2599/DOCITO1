@@ -43,5 +43,7 @@ if ($rol == "doctor") {
     $sql = "INSERT INTO Doctor (nombre, correo, telefono, estado, contrasena, especialidad) VALUES ('$nombre', '$correo', '$telefono', '$estado', '$password', '$especialidad')";
 }
 
+header("Location: index.php");
+exit;
 
 if ($conn->query($sql) === FALSE) { echo "Error en la consulta"."<br>";}

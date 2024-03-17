@@ -48,7 +48,7 @@ d.getElementById("tel").addEventListener("keypress", function (e) {
 
 function isDoctor() {
   d.querySelector("form").addEventListener("submit", function (e) {
-    e.preventDefault();
+    // No se evita el envío del formulario inicialmente
 
     // Hacemos solicitud al server para confirmar que el doctor exista
     fetch("./doctor.php", {
@@ -58,13 +58,9 @@ function isDoctor() {
       .then((response) => response.json())
       .then((data) => {
         if (!data["registered"]) {
-          console.log("NO existe");
           d.getElementById("not-registered").style.display = "block";
-        } else {
-          this.submit();
+          e.preventDefault(); // Evita el envío del formulario si el doctor no está registrado
         }
       });
-
-    console.log("hola?");
   });
 }

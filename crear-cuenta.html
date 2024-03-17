@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docita - Crear cuenta</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+  </head>
+
+  <body id="body-login">
+    <form action="registrar-cuenta.php" method="post" class="form-container">
+      <h2 class="form-title">Registrar una cuenta</h2>
+
+      <div class="form-input input-inline">
+        <div class="inputs">
+          <label for="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" required />
+        </div>
+
+        <div class="inputs">
+          <label for="apellido">Apellido</label>
+          <input type="text" name="apellido" id="apellido" required />
+        </div>
+      </div>
+
+      <div class="form-input input-inline">
+        <div class="inputs">
+          <label for="tel">Número de teléfono</label>
+          <input type="tel" name="tel" id="tel" required />
+        </div>
+
+        <div class="inputs">
+          <label for="estado">Estado</label>
+          <input type="estado" name="estado" id="estado" required />
+        </div>
+      </div>
+
+      <div class="form-input input">
+        <label for="email">Correo electrónico</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="example@email.com"
+          required
+        />
+      </div>
+
+      <div class="form-input input-inline">
+        <div class="inputs">
+          <label for="password">Contraseña</label>
+          <input type="password" name="password" id="password" required />
+        </div>
+
+        <div class="inputs">
+          <label for="roles">Rol</label>
+          <select name="roles" id="roles">
+            <option value="cliente">Cliente</option>
+            <option value="asistente">Asistente</option>
+            <option value="doctor">Doctor</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="dinamic-element"></div>
+
+      <div class="form-btn">
+        <button type="submit" class="btn">Crear cuenta</button>
+        <a href="index.php" class="form-text">Iniciar sesión</a>
+      </div>
+    </form>
+  </body>
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/registrar.js"></script>
+</html>

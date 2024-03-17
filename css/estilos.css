@@ -1,0 +1,151 @@
+:root {
+    --main-color: #094179;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#body-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--main-color);
+}
+
+/** formulario **/
+form {
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.259);
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 30px;
+    width: 400px;
+    justify-content: space-between;
+    align-content: space-between;
+    align-items: stretch;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.inputs {
+    width: 45%;
+}
+
+.input-inline {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.form-input label,
+.form-input .inputs label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.form-input .inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input input,
+.form-input select {
+    display: block;
+    width: 97%;
+    padding: 0.375rem 0.375rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.form-text {
+    text-decoration: none;
+    margin-top: 15px;
+    color: #000;
+}
+
+.form-input .form-text {
+    text-align: right;
+}
+
+.form-btn {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-btn .form-text {
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    color: #fff;
+    background-color: var(--main-color);
+}
+
+.error {
+    margin-bottom: 20px;
+    color: red;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+/** Menú de navegación **/
+.navbar {
+    align-items: center;
+    background-color: var(--main-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.259);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 5rem;
+}
+
+.navbar-link a {
+    color: #fff;
+    text-decoration: none;
+    margin: 10px;
+    font-size: 18px;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+.navbar-link a:hover {
+    color: cornflowerblue;
+}
+
+.logout button {
+    color: #094179;
+    background-color: #fff !important;
+    line-height: 1;
+}
